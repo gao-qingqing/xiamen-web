@@ -1,0 +1,50 @@
+body {
+    font-size: 13px;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+#lottery {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 306px;
+    text-align: center;
+}
+button {
+    margin: 50px 0;
+    width: 100px;
+    height: 100px;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.active {
+    background-color: #666;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.reset {
+    float: left;
+    padding-left: 10px;
+}
+.edit {
+    float: right;
+    padding-left: 10px;
+}
+img {
+    vertical-align: bottom;
+}
+.top {
+    margin-top: 10px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
