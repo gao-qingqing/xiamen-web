@@ -42,6 +42,23 @@ img {
 .top {
     margin-top: 10px;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+li {
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0;
+}
+li span {
+    float: left;
+    padding-left: 10px;
+}
+.span {
+    width: 230px;
+}
 .show {
     display: block;
 }

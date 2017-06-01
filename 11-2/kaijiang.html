@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="lottery">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>抽奖游戏</title>
     <script src="js/angular.min.js"></script>
     <link href="styles/style.css" rel="stylesheet">
+
 </head>
 <body>
-   <div id="lottery">
+   <div id="lottery" ng-controller="ctrl_lottery">
        <div id="step1">
-           <button>开始</button>
+           <button ng-click="start()">开始</button>
        </div>
        <div id="step2" class="hide">
-         <div class="item">
-
+         <div class="item" ng-repeat="item in items"
+         id="{{item.id}}" ng-class="{'active':item.status}">
+            {{item.name}}
          </div>
        </div>
        <div id="step3" class="hide top">
           <a class="reset">
-              <img src="">重新开始
+              <img src="img/reset.jpg">重新开始
           </a>
            <a class="edit">
-               <img src="">修改奖品
+               <img src="img/edit.jpg">修改奖品
            </a>
            <button class="active"></button>
        </div>
        <div id="step4" class="hide top">
            <a class="reset">
-               <img src="">返回
+               <img src="img/return.png">返回
            </a>
            <form>
                <input type="text">
@@ -36,12 +38,12 @@
            <ul>
                <li>
                    <span></span>
-                   <span></span>
+                   <span class="span"></span>
                    <a>删除</a>
                </li>
            </ul>
        </div>
    </div>
-<script src="app.js"></script>
+   <script src="js/app.js"></script>
 </body>
 </html>
